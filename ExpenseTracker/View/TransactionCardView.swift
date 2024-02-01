@@ -15,7 +15,7 @@ struct TransactionCardView: View {
         
         HStack(spacing: 12){
             //MARK: First Letter Avatar
-            if let  first = expense.remark.first{
+            if let first = expense.remark.first{
                 Text(String(first))
                     .font(.title.bold())
                     .foregroundColor(.white)
@@ -31,6 +31,21 @@ struct TransactionCardView: View {
                 .fontWeight(.semibold)
                 .lineLimit(1)
                 .frame(maxWidth: .infinity, alignment: .leading)
-        }.padding(.horizontal)
+            
+            VStack(alignment: .trailing, spacing: 7){
+                //MARK: Displaying Price
+                let price = expenseViewModel.convertNumberToPrice(value: expense.amount)
+                
+                Text(price)
+                    .font(.callout)
+                    .opacity(0.7)
+                
+                Text(expense.date.formatted(date: .numeric, time: .omitted))
+                    .font(.caption)
+                    .opacity(0.5)
+            }
+        }
+        .padding()
+        .background{RoundedRectangle(cornerRadius: 15, style: .continuous).fill(.gray)}
     }
 }

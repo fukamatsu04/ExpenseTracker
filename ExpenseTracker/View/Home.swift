@@ -69,6 +69,8 @@ struct Home: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .top)
+        .padding(.horizontal)
+        .offset(y: -35)
     }
     
 }

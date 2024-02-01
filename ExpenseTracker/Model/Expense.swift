@@ -25,8 +25,11 @@ enum ExpenseType: String{
 }
 
 var sample_expense: [Expense] = [
-    Expense(remark: "Mouse", amount: 99, date: Date(timeIntervalSince1970: 111111111), type: .expense, color: .red),
-    Expense(remark: "Key Board", amount: 99, date: Date(timeIntervalSince1970: 111111111), type: .expense, color: .green),
-    Expense(remark: "Webcam", amount: 99, date: Date(timeIntervalSince1970: 111111111), type: .expense, color: .yellow),
-    Expense(remark: "PC", amount: 99, date: Date(timeIntervalSince1970: 111111111), type: .expense, color: .blue),
+    Expense(remark: "Mouse", amount: 99, date: Date(timeIntervalSince1970: 1), type: .expense, color: .red),
+    Expense(remark: "Key Board", amount: 76, date: Date(timeIntervalSince1970: 1), type: .expense, color: .green),
+    Expense(remark: "Webcam", amount: 22, date: Date(timeIntervalSince1970: 1), type: .expense, color: .yellow),
+    Expense(remark: "PC", amount: 320, date: Date(timeIntervalSince1970: 111111111), type: .expense, color: .blue),
+    Expense(remark: "Mouse", amount: 99, date: Date(timeIntervalSince1970: 1), type: .expense, color: .pink),
+    //Expense(remark: "Mouse", amount: 99, date: Date(timeIntervalSince1970: 1), type: .expense, color: .green),
+    //Expense(remark: "Mouse", amount: 99, date: Date(timeIntervalSince1970: 1), type: .expense, color: .gray),
 ]
