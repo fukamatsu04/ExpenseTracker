@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B042B6935C00003E246 /* TransactionCardView.swift */; };
 		DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */; };
-		DC4DAF0E2B5944A5001AA687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0D2B5944A5001AA687 /* ContentView.swift */; };
+		DC4DAF0E2B5944A5001AA687 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0D2B5944A5001AA687 /* Home.swift */; };
 		DC4DAF102B5944A5001AA687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */; };
 		DC4DAF132B5944A5001AA687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */; };
+		DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC3F5B042B6935C00003E246 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		DC4DAF082B5944A5001AA687 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
-		DC4DAF0D2B5944A5001AA687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC4DAF0D2B5944A5001AA687 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		DC4DAF0A2B5944A5001AA687 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DC4DAF1C2B63EEF4001AA687 /* Controller */,
+				DC4DAF1B2B63EEE4001AA687 /* View */,
+				DC4DAF1A2B63EED1001AA687 /* Model */,
 				DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */,
-				DC4DAF0D2B5944A5001AA687 /* ContentView.swift */,
 				DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */,
 				DC4DAF112B5944A5001AA687 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC4DAF1A2B63EED1001AA687 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC4DAF1B2B63EEE4001AA687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DAF0D2B5944A5001AA687 /* Home.swift */,
+				DC3F5B042B6935C00003E246 /* TransactionCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC4DAF1C2B63EEF4001AA687 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4DAF0E2B5944A5001AA687 /* ContentView.swift in Sources */,
+				DC4DAF0E2B5944A5001AA687 /* Home.swift in Sources */,
+				DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */,
 				DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */,
+				DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
