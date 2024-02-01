@@ -63,14 +63,16 @@ struct Home: View {
     @ViewBuilder
     func SpendingCardView()-> some View{
         
-        VStack{
-            ForEach(expenseViewModel.expenses){
-                expense in TransactionCardView(expense: expense).environmentObject(expenseViewModel)
+        ScrollView(.vertical){
+            
+            VStack{
+                ForEach(expenseViewModel.expenses){
+                    expense in TransactionCardView(expense: expense).environmentObject(expenseViewModel)
+                }
             }
-        }
-        .frame(maxWidth: .infinity, alignment: .top)
-        .padding(.horizontal)
-        .offset(y: -35)
+            .frame(maxWidth: .infinity, alignment: .top)
+            .padding(.horizontal)
+        }.offset(y: -35)
     }
     
 }
