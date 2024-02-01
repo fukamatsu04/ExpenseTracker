@@ -64,8 +64,9 @@ struct Home: View {
     func SpendingCardView()-> some View{
         
         VStack{
-            TransactionCardView()
-            //ForEach()
+            ForEach(expenseViewModel.expenses){
+                expense in TransactionCardView(expense: expense).environmentObject(expenseViewModel)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .top)
     }

@@ -29,7 +29,23 @@ class ExpenseViewModel: ObservableObject{
         return currentMonthAndYear.formatted(date: .abbreviated, time: .omitted)
     }
     
-    @Published var expenses: [String]
+    @Published var expenses: [Expense] = sample_expense
+    
+    func convertExpensesToCurrency(expenses: [Expense], type: ExpenseType = .all)->String{
+        var value: Double = 0
+        value = expenses.reduce(0, { partialResult, expense in return partialResult + (type == .all ? (expense.type == .income ? expense.amount : -expense.amount) : (expense.type == type ? expense.amount : 0))
+        })
+        
+        return convertNumberToPrice(value: value)
+    }
+    
+    //MARK: Converting Number To Price
+    func convertNumberToPrice(value: Double)-> String{
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        return formatter.string(from: .init(value: value)) ?? "$0.00"
+    }
     
 }
 
