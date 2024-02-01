@@ -21,13 +21,15 @@ class ExpenseViewModel: ObservableObject{
         
         startDate = calendar.date(from: components)!
         currentMonthAndYear = calendar.date(from: components)!
+        
     }
     
-    //MARK: Formatting Current Month And Year data to a string  
+    //MARK: Formatting Current Month And Year data to a string
     func currentMonthAndYearString()->String{
         return currentMonthAndYear.formatted(date: .abbreviated, time: .omitted)
     }
     
+    @Published var expenses: [String]
     
 }
 

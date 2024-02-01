@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B042B6935C00003E246 /* TransactionCardView.swift */; };
+		DC3F5B072B6B3D5F0003E246 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B062B6B3D5F0003E246 /* Expense.swift */; };
 		DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */; };
 		DC4DAF0E2B5944A5001AA687 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0D2B5944A5001AA687 /* Home.swift */; };
 		DC4DAF102B5944A5001AA687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		DC3F5B042B6935C00003E246 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		DC3F5B062B6B3D5F0003E246 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DC4DAF082B5944A5001AA687 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		DC4DAF0D2B5944A5001AA687 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */,
+				DC3F5B062B6B3D5F0003E246 /* Expense.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */,
 				DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */,
 				DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */,
+				DC3F5B072B6B3D5F0003E246 /* Expense.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

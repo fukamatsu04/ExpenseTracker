@@ -19,16 +19,6 @@ struct Home: View {
         }
     }
     
-    // MARK: Expense Gradient View Using GeometryReactagle
-    
-    @ViewBuilder
-    func SpendingCardView()-> some View{
-        
-        VStack{
-            //ForEach()
-        }
-        .frame(maxWidth: .infinity, alignment: .top)
-    }
     
     // MARK: Expense Gradient View
     @ViewBuilder
@@ -68,6 +58,16 @@ struct Home: View {
             .cornerRadius(25)
             .ignoresSafeArea()
         
+    }
+    
+    @ViewBuilder
+    func SpendingCardView()-> some View{
+        
+        VStack{
+            TransactionCardView()
+            //ForEach()
+        }
+        .frame(maxWidth: .infinity, alignment: .top)
     }
     
 }
