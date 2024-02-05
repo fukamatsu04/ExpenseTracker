@@ -11,12 +11,11 @@ struct Home: View {
     
     @StateObject var expenseViewModel: ExpenseViewModel = .init()
     var body: some View {
-        ZStack{
             VStack{
                 ExpenseCardView()
                 SpendingCardView()
-            }
-        }
+                ExpenseTabView()
+            }.ignoresSafeArea()
     }
     
     
@@ -56,8 +55,7 @@ struct Home: View {
             .background(LinearGradient(colors: [.purple, .orange], startPoint: .topTrailing, endPoint: .bottomTrailing))
             .foregroundStyle(.white)
             .cornerRadius(25)
-            .ignoresSafeArea()
-        
+            .padding(.bottom, 25)
     }
     
     @ViewBuilder
@@ -72,9 +70,16 @@ struct Home: View {
             }
             .frame(maxWidth: .infinity, alignment: .top)
             .padding(.horizontal)
-        }.offset(y: -35)
+        }.offset(y: -82)
+            .padding(.bottom, -80)
     }
     
+    @ViewBuilder
+    func ExpenseTabView()->some View{
+        TabView{
+            ExpenseTrackerTabView()
+        }.frame(height: 100)
+    }
 }
 
 #Preview {

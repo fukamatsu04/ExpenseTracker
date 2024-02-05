@@ -46,6 +46,6 @@ struct TransactionCardView: View {
             }
         }
         .padding()
-        .background{RoundedRectangle(cornerRadius: 15, style: .continuous).fill(.gray)}
+        .background{RoundedRectangle(cornerRadius: 15, style: .continuous).fill(.purple)}
     }
 }

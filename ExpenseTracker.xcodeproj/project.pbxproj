@@ -14,6 +14,11 @@
 		DC4DAF102B5944A5001AA687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */; };
 		DC4DAF132B5944A5001AA687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */; };
 		DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */; };
+		DCF78F7B2B6BC85200EDA2C0 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF78F7A2B6BC85200EDA2C0 /* TabView.swift */; };
+		DCF9DAC72B7100D30015A471 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DAC62B7100D30015A471 /* CategoryView.swift */; };
+		DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */; };
+		DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DACA2B7101270015A471 /* ChartView.swift */; };
+		DCF9DACD2B71013D0015A471 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DACC2B71013D0015A471 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		DCF78F7A2B6BC85200EDA2C0 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		DCF9DAC62B7100D30015A471 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		DCF9DACA2B7101270015A471 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		DCF9DACC2B71013D0015A471 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,11 @@
 			children = (
 				DC4DAF0D2B5944A5001AA687 /* Home.swift */,
 				DC3F5B042B6935C00003E246 /* TransactionCardView.swift */,
+				DCF78F7A2B6BC85200EDA2C0 /* TabView.swift */,
+				DCF9DAC62B7100D30015A471 /* CategoryView.swift */,
+				DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */,
+				DCF9DACA2B7101270015A471 /* ChartView.swift */,
+				DCF9DACC2B71013D0015A471 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,7 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4DAF0E2B5944A5001AA687 /* Home.swift in Sources */,
+				DCF9DAC72B7100D30015A471 /* CategoryView.swift in Sources */,
+				DCF9DACD2B71013D0015A471 /* ProfileView.swift in Sources */,
 				DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */,
+				DCF78F7B2B6BC85200EDA2C0 /* TabView.swift in Sources */,
+				DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */,
+				DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */,
 				DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */,
 				DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */,
 				DC3F5B072B6B3D5F0003E246 /* Expense.swift in Sources */,
