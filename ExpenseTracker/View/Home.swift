@@ -70,14 +70,38 @@ struct Home: View {
             }
             .frame(maxWidth: .infinity, alignment: .top)
             .padding(.horizontal)
-        }.offset(y: -82)
+        }.offset(y: -75)
             .padding(.bottom, -80)
     }
     
     @ViewBuilder
     func ExpenseTabView()->some View{
-        TabView{
-            ExpenseTrackerTabView()
+        
+        TabView {
+            /*Home()
+                .tabItem {
+                    Image(systemName: "Home")
+                    Text("Home")
+                }*/
+            CategoryView()
+                .tabItem {
+                    Image(systemName: "square.grid.3x3.topright.filled")
+                    Text("Category")
+                }
+            AddExpense()
+                .tabItem {
+                    Image(systemName: "plus.app")
+                }
+            ChartView()
+                .tabItem {
+                    Image(systemName: "chart.pie")
+                    Text("Chart")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Person")
+                }
         }.frame(height: 100)
     }
 }
