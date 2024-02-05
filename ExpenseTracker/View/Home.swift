@@ -11,11 +11,12 @@ struct Home: View {
     
     @StateObject var expenseViewModel: ExpenseViewModel = .init()
     var body: some View {
-            VStack{
-                ExpenseCardView()
-                SpendingCardView()
-                ExpenseTabView()
-            }.ignoresSafeArea()
+        VStack{
+            ExpenseCardView()
+            SpendingCardView()
+            ExpenseTabView()
+        }.ignoresSafeArea()
+            .background(Color("BackGroundMainColor"))
     }
     
     
@@ -40,7 +41,7 @@ struct Home: View {
                 }.frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 23)
                 
-                Image(systemName: "arrow.down.left.circle.fill")
+                Image(systemName: "arrow.up.forward.circle.fill")
                 
                 VStack(spacing: 4){
                     Text("EXPENSE")
