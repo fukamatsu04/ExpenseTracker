@@ -13,6 +13,14 @@ class ExpenseViewModel: ObservableObject{
     @Published var startDate: Date = Date()
     @Published var endDate: Date = Date()
     @Published var currentMonthAndYear: Date = Date()
+    @Published var expenses: [Expense] = sample_expense
+    
+    //MARK: New Expense Properties
+    @Published var addNewExpense: Bool = false
+    @Published var amount: String = ""
+    @Published var type: ExpenseType = .all
+    @Published var date: Date = Date()
+    @Published var remark: String = ""
     
     init(){
         //MARK: Fetching Current Month Starting Date
@@ -29,7 +37,6 @@ class ExpenseViewModel: ObservableObject{
         return currentMonthAndYear.formatted(date: .abbreviated, time: .omitted)
     }
     
-    @Published var expenses: [Expense] = sample_expense
     
     func convertExpensesToCurrency(expenses: [Expense], type: ExpenseType = .all)->String{
         var value: Double = 0
