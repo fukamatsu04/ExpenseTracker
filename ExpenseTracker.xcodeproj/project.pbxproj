@@ -14,6 +14,7 @@
 		DC4DAF102B5944A5001AA687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */; };
 		DC4DAF132B5944A5001AA687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */; };
 		DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */; };
+		DCB28BF82B765AEF00C0AE2F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB28BF72B765AEF00C0AE2F /* Color.swift */; };
 		DCF9DAC72B7100D30015A471 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DAC62B7100D30015A471 /* CategoryView.swift */; };
 		DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */; };
 		DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DACA2B7101270015A471 /* ChartView.swift */; };
@@ -29,6 +30,7 @@
 		DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4DAF122B5944A5001AA687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC4DAF1D2B67CB77001AA687 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		DCB28BF72B765AEF00C0AE2F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		DCF9DAC62B7100D30015A471 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		DCF9DACA2B7101270015A471 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		DC4DAF0A2B5944A5001AA687 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DCB28BF62B765AC600C0AE2F /* Extensions */,
 				DC4DAF1C2B63EEF4001AA687 /* Controller */,
 				DC4DAF1B2B63EEE4001AA687 /* View */,
 				DC4DAF1A2B63EED1001AA687 /* Model */,
@@ -110,6 +113,14 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCB28BF62B765AC600C0AE2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCB28BF72B765AEF00C0AE2F /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				DC4DAF0E2B5944A5001AA687 /* Home.swift in Sources */,
 				DCF9DAC72B7100D30015A471 /* CategoryView.swift in Sources */,
 				DCF9DACD2B71013D0015A471 /* ProfileView.swift in Sources */,
+				DCB28BF82B765AEF00C0AE2F /* Color.swift in Sources */,
 				DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */,
 				DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */,
 				DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */,

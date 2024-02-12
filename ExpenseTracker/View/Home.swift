@@ -16,7 +16,7 @@ struct Home: View {
             SpendingCardView()
             ExpenseTabView()
         }.ignoresSafeArea()
-            .background(Color("BackGroundMainColor"))
+            .background(Color.theme.background)
     }
     
     
@@ -108,6 +108,8 @@ struct Home: View {
 }
 
 #Preview {
-    Home()
+    NavigationView{
+        Home()
+    }
 }
 
