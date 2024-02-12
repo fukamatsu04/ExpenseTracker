@@ -37,7 +37,7 @@ class ExpenseViewModel: ObservableObject{
         return currentMonthAndYear.formatted(date: .abbreviated, time: .omitted)
     }
     
-    
+    //MARK: Converting Expenses to Currency
     func convertExpensesToCurrency(expenses: [Expense], type: ExpenseType = .all)->String{
         var value: Double = 0
         value = expenses.reduce(0, { partialResult, expense in return partialResult + (type == .all ? (expense.type == .income ? expense.amount : -expense.amount) : (expense.type == type ? expense.amount : 0))

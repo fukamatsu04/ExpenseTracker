@@ -17,11 +17,12 @@ struct NewExpense: View {
                 Text("Add Expenses")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .opacity(0.5)
+                    .foregroundColor(.white)
                 
                 // MARK: Custom TextField
                 // For Currency Symbol
-                if let symbol = expenseViewModel.convertNumberToPrice(value: 0).first{
+                let symbol: Substring? = expenseViewModel.convertNumberToPrice(value: 0).prefix(2)
+                if symbol != nil{
                     TextField("0", text: $expenseViewModel.amount)
                         .font(.system(size: 35))
                         .foregroundColor(.black)
@@ -32,9 +33,9 @@ struct NewExpense: View {
                                 .font(.system(size: 35))
                                 .opacity(0)
                                 .overlay(alignment: .leading){
-                                    Text(String(symbol))
+                                    Text(String(symbol!))
                                         .opacity(0.5)
-                                        .offset(x: -15, y: 5)
+                                        .offset(x: -25, y: 5)
                                 }
                         }
                         .padding(.vertical,10)
@@ -48,7 +49,7 @@ struct NewExpense: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background{Color.theme.background.ignoresSafeArea()}
+        .background(LinearGradient(colors: [.purple, .orange], startPoint: .topTrailing, endPoint: .bottomTrailing).ignoresSafeArea())
         .overlay(alignment: .topTrailing){
             
             //MARK: Close Button
