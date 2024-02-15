@@ -47,11 +47,30 @@ struct NewExpense: View {
                         .padding(.top)
                 }
                 
+                //MARK: Custom Label "Remark"
                 Label{
                     TextField("Remark", text: $expenseViewModel.remark)
                         .padding(.leading,10)
                 } icon: {
                     Image(systemName: "list.bullet.rectangle.portrait.fill")
+                        .font(.title3)
+                        .foregroundStyle(Color.gray)
+                }
+                .padding(.vertical, 20)
+                .padding(.horizontal, 15)
+                .background{
+                    RoundedRectangle(cornerRadius: 12, style: .continuous).fill(.white)
+                }
+                .padding(.top, 25)
+                
+                //MARK: Custom Label "Dateset"
+                Label{
+                    DatePicker.init("", selection: $expenseViewModel.date, in:Date.distantPast...Date(), displayedComponents: [.date])
+                        .datePickerStyle(.compact)
+                        .labelsHidden()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                } icon: {
+                    Image(systemName: "calendar")
                         .font(.title3)
                         .foregroundStyle(Color.gray)
                 }
