@@ -46,6 +46,21 @@ struct NewExpense: View {
                         .padding(.horizontal,20)
                         .padding(.top)
                 }
+                
+                Label{
+                    TextField("Remark", text: $expenseViewModel.remark)
+                        .padding(.leading,10)
+                } icon: {
+                    Image(systemName: "list.bullet.rectangle.portrait.fill")
+                        .font(.title3)
+                        .foregroundStyle(Color.gray)
+                }
+                .padding(.vertical, 20)
+                .padding(.horizontal, 15)
+                .background{
+                    RoundedRectangle(cornerRadius: 12, style: .continuous).fill(.white)
+                }
+                .padding(.top, 25)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
