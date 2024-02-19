@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>5</string>
+					<key>EndingLineNumber</key>
+					<string>106</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>77</string>
+					<key>Timestamp</key>
+					<string>729783261.938504</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>ExpenseTracker/View/Home.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>    @ViewBuilder
+    func ExpenseTabView()-&gt;some View{
+        
+        TabView {
+            /*Home()
+                .tabItem {
+                    Image(systemName: "Home")
+                    Text("Home")
+                }*/
+            CategoryView()
+                .tabItem {
+                    Image(systemName: "square.grid.3x3.topright.filled")
+                    Text("Category")
+                }
+            AddExpense()
+                .tabItem {
+                    Image(systemName: "plus.app")
+                }
+            ChartView()
+                .tabItem {
+                    Image(systemName: "chart.pie")
+                    Text("Chart")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Person")
+                }
+        }.frame(height: 100)
+    }</string>
+				<key>leading</key>
+				<string>    }
+    
+</string>
+				<key>trailing</key>
+				<string>
+}
+
+</string>
+			</dict>
+			<key>title</key>
+			<string>REFACTOR</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
