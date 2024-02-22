@@ -12,7 +12,7 @@ struct ExpenseTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                Home()
+                HomeTabView()
             }
         }
     }

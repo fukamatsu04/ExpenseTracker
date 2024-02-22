@@ -14,9 +14,9 @@ struct Home: View {
         VStack{
             ExpenseCardView()
             SpendingCardView()
-            ExpenseTabView()
-        }.ignoresSafeArea()
-            .background(Color.theme.background)
+        }
+        .ignoresSafeArea()
+        .background(Color.theme.background)
     }
     
     
@@ -56,7 +56,7 @@ struct Home: View {
             .background(LinearGradient(colors: [.purple, .orange], startPoint: .topTrailing, endPoint: .bottomTrailing))
             .foregroundStyle(.white)
             .cornerRadius(25)
-            .padding(.bottom, 25)
+            .padding(.bottom, 60)
     }
     
     @ViewBuilder
@@ -71,39 +71,8 @@ struct Home: View {
             }
             .frame(maxWidth: .infinity, alignment: .top)
             .padding(.horizontal)
-        }.offset(y: -75)
+        }.offset(y: -110)
             .padding(.bottom, -80)
-    }
-    
-    @ViewBuilder
-    func ExpenseTabView()->some View{
-        
-        TabView {
-            /*Home()
-                .tabItem {
-                    Image(systemName: "Home")
-                    Text("Home")
-                }*/
-            CategoryView()
-                .tabItem {
-                    Image(systemName: "square.grid.3x3.topright.filled")
-                    Text("Category")
-                }
-            AddExpense()
-                .tabItem {
-                    Image(systemName: "plus.app")
-                }
-            ChartView()
-                .tabItem {
-                    Image(systemName: "chart.pie")
-                    Text("Chart")
-                }
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Person")
-                }
-        }.frame(height: 100)
     }
 }
 

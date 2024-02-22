@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0CAA5F2B87735C0042376B /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0CAA5E2B87735C0042376B /* HomeTabView.swift */; };
 		DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B042B6935C00003E246 /* TransactionCardView.swift */; };
 		DC3F5B072B6B3D5F0003E246 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B062B6B3D5F0003E246 /* Expense.swift */; };
 		DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0CAA5E2B87735C0042376B /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		DC3F5B042B6935C00003E246 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		DC3F5B062B6B3D5F0003E246 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DC4DAF082B5944A5001AA687 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 		DC4DAF1B2B63EEE4001AA687 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC0CAA5E2B87735C0042376B /* HomeTabView.swift */,
 				DC4DAF0D2B5944A5001AA687 /* Home.swift */,
 				DC3F5B042B6935C00003E246 /* TransactionCardView.swift */,
 				DCF9DAC62B7100D30015A471 /* CategoryView.swift */,
@@ -199,6 +202,7 @@
 				DC4DAF0E2B5944A5001AA687 /* Home.swift in Sources */,
 				DCF9DAC72B7100D30015A471 /* CategoryView.swift in Sources */,
 				DCF9DACD2B71013D0015A471 /* ProfileView.swift in Sources */,
+				DC0CAA5F2B87735C0042376B /* HomeTabView.swift in Sources */,
 				DCB28BF82B765AEF00C0AE2F /* Color.swift in Sources */,
 				DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */,
 				DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */,
