@@ -12,7 +12,7 @@ struct NewExpense: View {
     //MARK: Environment Values
     @Environment(\.self) var env
     var body: some View {
-        NavigationView{
+
             VStack{
                 VStack(spacing: 15){
                     Text("Add Expenses")
@@ -139,7 +139,6 @@ struct NewExpense: View {
                         .opacity(0.7)
                 }
             }
-        }
     }
     
     //MARK: Custom Checkbox

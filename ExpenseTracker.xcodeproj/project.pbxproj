@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC0CAA5F2B87735C0042376B /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0CAA5E2B87735C0042376B /* HomeTabView.swift */; };
+		DC0CAA612B878B6E0042376B /* HomeCustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0CAA602B878B6E0042376B /* HomeCustomTabView.swift */; };
 		DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B042B6935C00003E246 /* TransactionCardView.swift */; };
 		DC3F5B072B6B3D5F0003E246 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F5B062B6B3D5F0003E246 /* Expense.swift */; };
 		DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		DC0CAA5E2B87735C0042376B /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		DC0CAA602B878B6E0042376B /* HomeCustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomTabView.swift; sourceTree = "<group>"; };
 		DC3F5B042B6935C00003E246 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		DC3F5B062B6B3D5F0003E246 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DC4DAF082B5944A5001AA687 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +77,6 @@
 				DC4DAF1C2B63EEF4001AA687 /* Controller */,
 				DC4DAF1B2B63EEE4001AA687 /* View */,
 				DC4DAF1A2B63EED1001AA687 /* Model */,
-				DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */,
 				DC4DAF0F2B5944A5001AA687 /* Assets.xcassets */,
 				DC4DAF112B5944A5001AA687 /* Preview Content */,
 			);
@@ -103,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				DC0CAA5E2B87735C0042376B /* HomeTabView.swift */,
+				DC0CAA602B878B6E0042376B /* HomeCustomTabView.swift */,
 				DC4DAF0D2B5944A5001AA687 /* Home.swift */,
 				DC3F5B042B6935C00003E246 /* TransactionCardView.swift */,
 				DCF9DAC62B7100D30015A471 /* CategoryView.swift */,
@@ -117,6 +119,7 @@
 		DC4DAF1C2B63EEF4001AA687 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DC4DAF0B2B5944A5001AA687 /* ExpenseTrackerApp.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */,
 				DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */,
 				DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */,
+				DC0CAA612B878B6E0042376B /* HomeCustomTabView.swift in Sources */,
 				DC3F5B072B6B3D5F0003E246 /* Expense.swift in Sources */,
 				DCB28BFA2B7A260200C0AE2F /* NewExpense.swift in Sources */,
 			);

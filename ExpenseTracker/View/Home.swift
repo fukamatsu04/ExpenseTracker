@@ -72,7 +72,7 @@ struct Home: View {
             .frame(maxWidth: .infinity, alignment: .top)
             .padding(.horizontal)
         }.offset(y: -110)
-            .padding(.bottom, -80)
+            .padding(.bottom, -20)
     }
 }
 

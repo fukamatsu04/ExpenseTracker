@@ -39,7 +39,7 @@ struct HomeTabView: View {
                     }
             }
         }
-        //.tint(.purple)
+        .tint(.purple)
     }
 }
 
