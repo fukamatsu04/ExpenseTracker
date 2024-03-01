@@ -9,8 +9,7 @@ import SwiftUI
 
 struct HomeTabView: View {
     var body: some View {
-        
-        VStack {
+        ZStack(alignment: .bottom) {
             TabView {
                 Home()
                     .tabItem {
@@ -22,10 +21,9 @@ struct HomeTabView: View {
                         Image(systemName: "square.grid.3x3.topright.filled")
                         Text("Category")
                     }
-                AddExpense()
+                Spacer()
                     .tabItem {
-                        Image(systemName: "plus.app")
-                        Text("Add expenses")
+                        EmptyView()
                     }
                 ChartView()
                     .tabItem {
@@ -38,8 +36,19 @@ struct HomeTabView: View {
                         Text("Person")
                     }
             }
+            .tint(.purple)
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "plus")
+                    .font(.system(size: 24))
+            }
+            .frame(width: 50, height: 50)
+            .background(.purple)
+            .foregroundStyle(.white)
+            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 10)))
         }
-        .tint(.purple)
     }
 }
 
