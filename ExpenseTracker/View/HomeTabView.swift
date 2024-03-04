@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    @State private var isPresented = false
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
@@ -39,7 +41,7 @@ struct HomeTabView: View {
             .tint(.purple)
             
             Button {
-                
+                isPresented = true
             } label: {
                 Image(systemName: "plus")
                     .font(.system(size: 24))
@@ -48,6 +50,9 @@ struct HomeTabView: View {
             .background(.purple)
             .foregroundStyle(.white)
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 10)))
+            .fullScreenCover(isPresented: $isPresented) {
+                NewExpense().environmentObject(ExpenseViewModel())
+            }
         }
     }
 }

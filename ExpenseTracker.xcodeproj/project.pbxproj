@@ -19,7 +19,6 @@
 		DCB28BF82B765AEF00C0AE2F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB28BF72B765AEF00C0AE2F /* Color.swift */; };
 		DCB28BFA2B7A260200C0AE2F /* NewExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB28BF92B7A260200C0AE2F /* NewExpense.swift */; };
 		DCF9DAC72B7100D30015A471 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DAC62B7100D30015A471 /* CategoryView.swift */; };
-		DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */; };
 		DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DACA2B7101270015A471 /* ChartView.swift */; };
 		DCF9DACD2B71013D0015A471 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9DACC2B71013D0015A471 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		DCB28BF72B765AEF00C0AE2F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		DCB28BF92B7A260200C0AE2F /* NewExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpense.swift; sourceTree = "<group>"; };
 		DCF9DAC62B7100D30015A471 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
-		DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		DCF9DACA2B7101270015A471 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		DCF9DACC2B71013D0015A471 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 				DC4DAF0D2B5944A5001AA687 /* Home.swift */,
 				DC3F5B042B6935C00003E246 /* TransactionCardView.swift */,
 				DCF9DAC62B7100D30015A471 /* CategoryView.swift */,
-				DCF9DAC82B7100F80015A471 /* AddExpenseView.swift */,
 				DCF9DACA2B7101270015A471 /* ChartView.swift */,
 				DCF9DACC2B71013D0015A471 /* ProfileView.swift */,
 				DCB28BF92B7A260200C0AE2F /* NewExpense.swift */,
@@ -208,7 +205,6 @@
 				DC0CAA5F2B87735C0042376B /* HomeTabView.swift in Sources */,
 				DCB28BF82B765AEF00C0AE2F /* Color.swift in Sources */,
 				DC4DAF1E2B67CB77001AA687 /* ExpenseViewModel.swift in Sources */,
-				DCF9DAC92B7100F80015A471 /* AddExpenseView.swift in Sources */,
 				DCF9DACB2B7101270015A471 /* ChartView.swift in Sources */,
 				DC4DAF0C2B5944A5001AA687 /* ExpenseTrackerApp.swift in Sources */,
 				DC3F5B052B6935C00003E246 /* TransactionCardView.swift in Sources */,

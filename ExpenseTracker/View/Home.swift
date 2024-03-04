@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-    
+
     @StateObject var expenseViewModel: ExpenseViewModel = .init()
     var body: some View {
         VStack{
